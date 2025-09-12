@@ -1,0 +1,12 @@
+<div>
+    <app-logo></app-logo>
+    {{ nome }} {{cognome}} {{anno}}
+    <h2>Il mio animale si chiama <strong>{{animale.nome}}</strong> ed è un {{animale.razza}}</h2>
+
+    Prodotto: {{ prodotto?.nome }}
+    <!-- prodotto?.nome è undefinded perchè non è stato definito -->
+    <br>
+    Bici: {{ bici!.nome }}
+    <!-- bici!.nome dice a TypeScript che bici esiste di sicuro, anche se non fa controlli -->
+</div>
+<hr>
