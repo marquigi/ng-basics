@@ -1,8 +1,7 @@
 <div class="d-flex flex-wrap justify-center gap-2">
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
-    <app-prodotto-card></app-prodotto-card>
+    @for ( p of prodotti; track p.nome){
+        <app-prodotto-card [prodotto]="p"></app-prodotto-card>
+        <!-- *ngFor="let [singolo oggetto array] of [array]" funziona come cliclo for of, ciclando su ogni singolo oggetto array-->
+    }
 </div>
+{{ prodotti | json }}

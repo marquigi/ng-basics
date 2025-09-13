@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Prodotto } from '../../models/Prodotto';
 
 @Component({
   selector: 'app-prodotto-card',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './prodotto-card.css'
 })
 export class ProdottoCard {
-
+  @Input() // il genitore passa dati al figlio
+  prodotto?: Prodotto; // un singolo prodotto ricevuto dal genitore
 }

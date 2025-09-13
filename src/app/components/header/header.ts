@@ -19,18 +19,18 @@ export class Header {
   prodotto?: Prodotto; // proprietà opzionale: può esserci oppure no, grazie al "?"
   
   bici?: Prodotto = {
-    id: 1,
     nome: "Bicicletta",
     prezzo: 120,
-    inOfferta: false
+    desc: "test",
+    foto: ""
   };
 
   esempio(){
     this.prodotto = {
-      id: 1,
       nome: "Bicicletta",
       prezzo: 120,
-      inOfferta: false
+      desc: "test",
+      foto: ""
     };
 
     let eta = 16;
