@@ -2,6 +2,7 @@
     @for ( p of prodotti; track p.nome){
         <app-prodotto-card [prodotto]="p"></app-prodotto-card>
         <!-- *ngFor="let [singolo oggetto array] of [array]" funziona come cliclo for of, ciclando su ogni singolo oggetto array-->
+        <!-- trackBy: dice ad Angular di riconoscere ogni prodotto tramite il nome -->
     }
 </div>
-{{ prodotti | json }}
+<!-- {{ prodotti | json }} -->
