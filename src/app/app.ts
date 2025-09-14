@@ -8,10 +8,10 @@ import { Prodotto } from './models/Prodotto';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, 
-   // Header, 
-    Footer, 
-    ListaProdotti, 
+  imports: [RouterOutlet,
+    // Header, 
+    Footer,
+    ListaProdotti,
     Title],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -23,13 +23,13 @@ export class App {
 
   prodotti_novita: Prodotto[] = [
     {
-      nome:"Bici",
+      nome: "Bici",
       desc: "Ad aria",
       prezzo: 100,
       foto: "https://picsum.photos/300/200"
     },
     {
-      nome:"Friggitrice",
+      nome: "Friggitrice",
       desc: "Ad aria",
       prezzo: 80,
       foto: "https://picsum.photos/300/200"
