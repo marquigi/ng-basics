@@ -26,13 +26,13 @@ export class App {
       nome:"Bici",
       desc: "Ad aria",
       prezzo: 100,
-      foto: "https://picsum.photos/100/200"
+      foto: "https://picsum.photos/300/200"
     },
     {
       nome:"Friggitrice",
       desc: "Ad aria",
       prezzo: 80,
-      foto: "https://picsum.photos/100/200"
+      foto: "https://picsum.photos/300/200"
     }
   ]
 }
