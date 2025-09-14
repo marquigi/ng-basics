@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { ProdottoCard } from '../prodotto-card/prodotto-card';
 import { Prodotto } from '../../models/Prodotto';
-import { JsonPipe } from '@angular/common';
+// import { JsonPipe } from '@angular/common';
 
 
 
 @Component({
   selector: 'app-lista-prodotti',
-  imports: [ProdottoCard, JsonPipe],
+  imports: [ProdottoCard], // JsonPipe
   templateUrl: './lista-prodotti.html',
   styleUrl: './lista-prodotti.css'
 })

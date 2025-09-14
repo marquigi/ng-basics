@@ -1,8 +1,12 @@
+@if( prodotto ){
 <div class="card" style="width: 18rem;">
-    <img [src]="prodotto?.foto" alt="" class="card-iomg-top">
+    <img [src]="prodotto.foto" alt="" class="card-iomg-top">
     <div class="card-body">
-        <h5 class="card-title">{{ prodotto?.nome }}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto?.prezzo}}</h6>
-        <p class="card-text">{{ prodotto?.desc }}</p>
+        <h5 class="card-title">{{ prodotto.nome |uppercase }}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto.prezzo |currency }}</h6>
+        <p class="card-text">{{ prodotto.desc }}</p>
     </div>
 </div>
+}@else{
+<p>Prodotto non inserito</p>
+}
