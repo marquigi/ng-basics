@@ -35,4 +35,25 @@ export class App {
       foto: "https://picsum.photos/300/200"
     }
   ]
+
+  prodotti_suggerimenti: Prodotto[] = [
+    {
+      nome: "Scooter",
+      desc: "nera",
+      prezzo: 100,
+      foto: "https://picsum.photos/300/200"
+    },
+    {
+      nome: "Chitarra",
+      desc: "eletrica",
+      prezzo: 80,
+      foto: "https://picsum.photos/300/200"
+    },
+    {
+      nome: "Aspirapolvere",
+      desc: "tossico",
+      prezzo: 75,
+      foto: "https://picsum.photos/300/200"
+    }
+  ]
 }

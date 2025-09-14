@@ -14,4 +14,7 @@ import { Prodotto } from '../../models/Prodotto';
 export class ListaProdotti {
   @Input() // il genitore passa dati al figlio
   prodotti: Prodotto[] = []; // array che riceve i prodotti dal genitore; Prodotto[] =>  array di oggetti di tipo Prodotto
+
+  @Input()
+  titolo: string = "";
 }

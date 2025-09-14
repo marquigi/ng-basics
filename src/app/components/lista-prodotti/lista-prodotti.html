@@ -1,3 +1,4 @@
+<h3>{{ titolo }}</h3>
 <div class="d-flex flex-wrap justify-center gap-2">
     @for ( p of prodotti; track p.nome){
     <app-prodotto-card [prodotto]="p"></app-prodotto-card>
@@ -5,4 +6,5 @@
     <!-- track dice ad Angular di riconoscere ogni prodotto tramite il nome -->
     }
 </div>
+<hr>
 <!-- {{ prodotti | json }} -->

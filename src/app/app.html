@@ -2,13 +2,13 @@
 
 <div class="container">
     <app-title testo="Prodotti"></app-title>
-    <app-title [testo]="testo_titolo_prodotti"></app-title>
-    <h3>Novità</h3>
-    <app-lista-prodotti [prodotti]="prodotti_novita"></app-lista-prodotti>
+    <!-- <app-title [testo]="testo_titolo_prodotti"></app-title> -->
+
+    <app-lista-prodotti titolo="Novità" [prodotti]="prodotti_novita"></app-lista-prodotti>
     <!-- passo l’array 'prodotti' del genitore al figlio -->
-    <hr>
-    <h3>Suggerimenti</h3>
-    <app-lista-prodotti></app-lista-prodotti>
+
+
+    <app-lista-prodotti titolo="Suggerimenti" [prodotti]="prodotti_suggerimenti"></app-lista-prodotti>
 
     <app-title testo="Blog"></app-title>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, placeat libero, eos eum alias neque ad hic

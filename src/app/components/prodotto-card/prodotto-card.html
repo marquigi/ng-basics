@@ -1,12 +1,21 @@
+<!-- Mostra il prodotto solo se esiste -->
 @if( prodotto ){
+<!-- Card con i dati del prodotto -->
 <div class="card" style="width: 18rem;">
+    <!-- Immagine del prodotto presa dalla proprietà "foto" -->
     <img [src]="prodotto.foto" alt="" class="card-iomg-top">
     <div class="card-body">
-        <h5 class="card-title">{{ prodotto.nome |uppercase }}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto.prezzo |currency }}</h6>
+        <!-- Nome del prodotto in maiuscolo -->
+        <!-- Colore rosso se prezzo > 80, verde se < 80 -->
+        <h5 class="card-title" [ngClass]="{rosso:prodotto.prezzo > 80, verde: prodotto.prezzo < 80 }">{{ prodotto.nome
+            |uppercase }}</h5>
+        <!-- Prezzo del prodotto formattato in euro -->
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto.prezzo |currency:'EUR':'symbol':'1.2-2' }}</h6>
+        <!-- Descrizione del prodotto -->
         <p class="card-text">{{ prodotto.desc }}</p>
     </div>
 </div>
+<!-- Se non c'è prodotto mostra messaggio alternativo -->
 }@else{
 <p>Prodotto non inserito</p>
 }
