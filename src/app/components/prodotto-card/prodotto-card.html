@@ -13,6 +13,19 @@
         <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto.prezzo |currency:'EUR':'symbol':'1.2-2' }}</h6>
         <!-- Descrizione del prodotto -->
         <p class="card-text">{{ prodotto.desc }}</p>
+
+        <!-- 
+        
+            L'attributo (click) è una "event binding" di Angular: 
+            significa che quando l’utente clicca sul bottone viene eseguita la funzione "saluta()" 
+            definita nel file TypeScript del componente (prodotto-card.component.ts).
+            Quindi: 
+                - Angular intercetta l’evento DOM "click"
+                - chiama il metodo "saluta()" del componente 
+                - dentro "saluta()" puoi scrivere qualsiasi logica (es. mostrare un alert, stampare in console, modificare variabili ecc.)
+            In pratica questo collega il template HTML alla logica TypeScript del componente 
+        -->
+        <button class="btn btn-primary" (click)="saluta()">Saluta</button>
     </div>
 </div>
 <!-- Se non c'è prodotto mostra messaggio alternativo -->

@@ -12,4 +12,9 @@ import { CurrencyPipe, UpperCasePipe, NgClass } from '@angular/common';
 export class ProdottoCard {
   @Input() // il genitore passa dati al figlio
   prodotto?: Prodotto; // un singolo prodotto ricevuto dal genitore
+
+  // Funzione
+  saluta() {
+    alert("Ciao!");
+  }
 }
