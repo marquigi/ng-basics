@@ -17,4 +17,11 @@ export class ListaProdotti {
 
   @Input()
   titolo: string = "";
+
+  // Funzione
+  // Metodo chiamato quando il figlio emette l'evento "prodottoSelezionato"
+  // Riceve come parametro il prodotto selezionato (p) e mostra un messaggio in console
+  selezionaProdotto(p: Prodotto) {
+    console.log("Prodotto selezionato", p.nome);
+  }
 }
