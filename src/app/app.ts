@@ -33,6 +33,12 @@ export class App {
       desc: "Ad aria",
       prezzo: 80,
       foto: "https://picsum.photos/300/200"
+    },
+    {
+      nome: "Pallone",
+      desc: "Ad aria",
+      prezzo: 10,
+      foto: "https://picsum.photos/300/200"
     }
   ]
 
