@@ -14,8 +14,9 @@
         <!-- Descrizione del prodotto -->
         <p class="card-text">{{ prodotto.desc }}</p>
 
+
+        <button class="btn btn-primary" (click)="saluta()">Saluta</button>
         <!-- 
-        
             L'attributo (click) è una "event binding" di Angular: 
             significa che quando l’utente clicca sul bottone viene eseguita la funzione "saluta()" 
             definita nel file TypeScript del componente (prodotto-card.component.ts).
@@ -25,7 +26,6 @@
                 - dentro "saluta()" puoi scrivere qualsiasi logica (es. mostrare un alert, stampare in console, modificare variabili ecc.)
             In pratica questo collega il template HTML alla logica TypeScript del componente 
         -->
-        <button class="btn btn-primary" (click)="saluta()">Saluta</button>
     </div>
 </div>
 <!-- Se non c'è prodotto mostra messaggio alternativo -->
